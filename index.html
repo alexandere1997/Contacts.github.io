@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.8.11/css/mdb.min.css" rel="stylesheet">
+  <title>Document</title>
+</head>
+<body>
+  <a href="content/"></a>
+  <header class="header">
+    <div class="header__house">
+      <a href="" class="header__icons"><img src="img/logo.png" alt=""></a>
+    </div>
+  </header>
+  <main class="main">
+      <nav class="header__nav">
+          <div class="header__link">
+              <a class="header__links" href=""><img src="img/Home.png" alt=""></a>
+              <a class="header__links active" href=""><img src="img/Clients.png" alt=""></a>
+              <a class="header__links" href=""><img src="img/Reports.png" alt=""></a>
+          </div>
+        </nav>
+        <section class="box">
+            <section class="seekers">
+                <div class="seekers__counter">
+                  <h3>Ваши соискатели</h3>
+                  <p>Всего соискателей: <span class="seekers__counter-element">0</span></p>
+                </div>
+                <div class="seekers__add">
+                  <button class="btn seekers__btn_one"><img src="img/favorites.png" alt=""> Избранные</button>
+                  <button class="btn seekers__btn_two"><img src="img/add.png" alt=""> Добавить соискателя</button>
+                </div>
+              </section>
+              <section class="candidates">
+                  <table class="candidates__tables">
+                      <tr class="candidates-tables__header">
+                        <th>Соискатель</th>
+                        <th>Телефон</th>
+                        <th>E-mail</th>
+                        <th>Оценка соискателя</th>
+                      </tr>
+                    </table>
+                    <div class="candidates__add">
+                        <p>Показать еще</p>
+                      </div>
+              </section>
+              <section class="Modal">
+                <div class="jobs">
+                  <p class="jobs__off">&times;</p>
+                    <div class="jobs__title">
+                        <p>Добавление соискателя</p>
+                      </div>
+                        <form class="jobs__form md-form">
+                          <h4 class="jobs-form__title">Основные данные</h4>
+                            <div class="form-group jobs-form__name">
+                              <label for="exampleInputText">ФИО</label>
+                              <input type="text" class="form-control" id="exampleInputText" placeholder="Введите ФИО">
+                            </div>
+                            <div class="jobs-form__jobs">
+                                <label>Вакансия</label>
+                                <select class="form-control" id="job">
+                                    <option value="">Выберите вакансию</option>
+                                    <option value="Full-stack разрабочик">Вакансия: Full-stack разрабочик</option>
+                                    <option value="Web-дизайнер">Вакансия: Web-дизайнер</option>
+                                    <option value="Front-end разрабочик">Вакансия: Front-end разрабочик</option>
+                                  </select>
+                            </div>
+                            <div class="form-group jobs-form__photo">
+                                <label for="exampleFormControlFile1">Фотография</label> <br>
+                                <span>Размер файла вложения не должен превышать 5 Мб, для загрузки допустимы следующие форматы файлов: jpg, png</span>
+                                <input name="file" type="file" id="field__file" class="field field__file" multiple="" accept="image/*">
+                                
+                                <label class="jobs-form__file-wrapper" for="field__file">
+                                  <div class="jobs-form__file-button">Выберите файл</div>
+                                  <div class="jobs-form__file-fake">Файл не вбран</div>
+                                </label>
+                                  
+                            </div>
+                          <h4 class="jobs-form__title">Контактные данные</h4>
+                              <div class="form-group jobs-form__telephone">
+                                  <label for="exampleInputTel">Номер телефона</label>
+                                  <input type="tel" class="form-control" id="exampleInputTel" placeholder="Введите номер телефона">
+                                  <a href="">Добавить еще один номер телефона</a>
+                                </div>
+                                <div class="form-group jobs-form__email">
+                                  <label for="exampleInputEmail">E-mail</label>
+                                  <input type="email" class="form-control" id="exampleInputEmail" placeholder="Введите E-mail">
+                                  <a href="">Добавить еще один e-mail</a>
+                                </div>
+                          <h4 class="jobs-form__title">Резюме и результаты тестового задания</h4>
+                                <div class="form-group jobs-form__summary">
+                                    <label for="exampleFormControlFile1">Резюме</label><br>
+                                    <span>Размер файла вложения не должен превышать 50 Мб, для загрузки допустимы следующие форматы файлов: pdf, doc</span>
+                                    <input name="file" type="file" id="summary__file" class="summary summary__file" multiple="" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                                
+                                    <label class="jobs-summary__file-wrapper" for="summary__file">
+                                      <div class="jobs-summary__file-button">Выберите файл</div>
+                                      <div class="jobs-summary__file-fake">Файл не вбран</div>
+                                    </label>
+                                  </div>
+                                  <div class="form-group jobs-form__results">
+                                      <label for="exampleFormControlFile1">Архив с результатами тестового задания</label> <br>
+                                      <span>Размер файла вложения не должен превышать 50 Мб, для загрузки допустимы следующие форматы файлов: zip, rar</span>
+                                      <input name="file" type="file" id="results__file" class="results results__file" multiple="" accept="application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document">
+                                
+                                      <label class="jobs-results__file-wrapper" for="results__file">
+                                        <div class="jobs-results__file-button">Выберите файл</div>
+                                        <div class="jobs-results__file-fake">Файл не вбран</div>
+                                      </label>
+                                    </div>
+                                <h4 class="jobs-form__title">Оценка соискателя</h4>
+                                <div class="jobs-form__assessment">
+                                  <div>
+                                    <p>Оценка резюме</p>
+                                    <div class="rating-one">
+                                      <input type="radio" class="input__one" id="star-5" name="rating__one" value="5">
+                                      <label for="star-5" class="label__one" title="Оценка «5»"></label>	
+                                      <input type="radio" class="input__one" id="star-4" name="rating__one" value="4">
+                                      <label for="star-4" class="label__one" title="Оценка «4»"></label>    
+                                      <input type="radio" class="input__one" id="star-3" name="rating__one" value="3">
+                                      <label for="star-3" class="label__one" title="Оценка «3»"></label>  
+                                      <input type="radio" class="input__one" id="star-2" name="rating__one" value="2">
+                                      <label for="star-2" class="label__one" title="Оценка «2»"></label>    
+                                      <input type="radio" class="input__one" id="star-1" name="rating__one" value="1">
+                                      <label for="star-1" class="label__one" title="Оценка «1»"></label>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <p>Оценка тестового задания</p>
+                                    <div class="rating-two">
+                                      <input type="radio" class="input__two" id="star-55" name="rating__two" value="5">
+                                      <label for="star-55" class="label__two"  title="Оценка «5»"></label>	
+                                      <input type="radio" class="input__two" id="star-44" name="rating__two" value="4">
+                                      <label for="star-44" class="label__two"   title="Оценка «4»"></label>    
+                                      <input type="radio" class="input__two" id="star-33" name="rating__two" value="3">
+                                      <label for="star-33" class="label__two"  title="Оценка «3»"></label>  
+                                      <input type="radio" class="input__two" id="star-22" name="rating__two" value="2">
+                                      <label for="star-22" class="label__two"  title="Оценка «2»"></label>    
+                                      <input type="radio" class="input__two" id="star-11" name="rating__two" value="1">
+                                      <label for="star-11" class="label__two"  title="Оценка «1»"></label>
+                                    </div>
+                                  </div>
+                                  <div>
+                                    <p>Оценка собеседования</p>
+                                    <div class="rating-fri">
+                                      <input type="radio" class="input__fri" id="star-555" name="rating__fri" value="5">
+                                      <label for="star-555" class="label__fri" title="Оценка «5»"></label>	
+                                      <input type="radio" class="input__fri" id="star-444" name="rating__fri" value="4">
+                                      <label for="star-444" class="label__fri" title="Оценка «4»"></label>    
+                                      <input type="radio" class="input__fri" id="star-333" name="rating__fri" value="3">
+                                      <label for="star-333" class="label__fri" title="Оценка «3»"></label>  
+                                      <input type="radio" class="input__fri" id="star-222" name="rating__fri" value="2">
+                                      <label for="star-222" class="label__fri" title="Оценка «2»"></label>    
+                                      <input type="radio" class="input__fri" id="star-111" name="rating__fri" value="1">
+                                      <label for="star-111" class="label__fri" title="Оценка «1»"></label>
+                                    </div>
+                                  </div>
+                                </div>
+      
+                                <div class="jobs-form__button">
+                                  <button class="btn form-button__one">Отменить</button>
+                                  <button type="submit" class="btn form-button__two">Добавить соискателя</button>
+                                </div>
+                          </form>
+                </div>
+                </section>
+                <section class="modal__save">
+                  <div class="save">
+                      <p class="save__off">&times;</p>
+                  </div>
+                </section>
+        </section>
+  </main>
+
+   <script src="js/index.js"></script>
+</body>
+</html>

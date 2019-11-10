@@ -1,0 +1,559 @@
+.Modal
+  display: none;
+  justify-content: flex-end
+  position: fixed
+  z-index: 1
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  overflow: auto
+  background-color: rgba(0, 0, 0, 0.8)
+.jobs
+  width: 650px
+  height: 1060px
+  top: 66px
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3)
+  padding: 20px
+  &__off
+    position: absolute
+    display: flex
+    justify-content: center
+    align-items: center
+    font-size: 24px
+    border: 1px solid #d7d7d7
+    right: 700px
+    width: 30px
+    height: 30px
+    background-color: #ffffff
+    border-radius: 3px
+    cursor: pointer
+  &__title
+    font-family: 'Roboto', sans-serif;
+    font-style: normal
+    font-weight: bold
+    font-size: 14px
+    text-transform: uppercase
+    color: #475364
+    margin-bottom: 50px
+  &__form
+    .jobs-form__title
+      font-family: 'Roboto', sans-serif;
+      font-style: normal
+      font-weight: bold
+      font-size: 12px
+      text-transform: uppercase
+      color: #475364
+    .jobs-form__name
+      label
+        font-family: 'Roboto', sans-serif;
+        font-style: normal
+        font-weight: bold
+        font-size: 11px
+        text-transform: uppercase
+        color: #475364
+      input
+        width: 600px
+        height: 36px
+        background: #F4F9FB
+        border: 1px solid #DCE5EA
+        box-sizing: border-box
+        border-radius: 3px
+        font-family: 'Roboto', sans-serif;
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        color: #8EA4B5
+    .jobs-form__jobs
+      label
+        font-family: 'Roboto', sans-serif;
+        font-style: normal
+        font-weight: bold
+        font-size: 11px
+        text-transform: uppercase
+        color: #475364
+      select
+        width: 600px
+        height: 36px
+        background: #F4F9FB
+        border: 1px solid #DCE5EA
+        box-sizing: border-box
+        border-radius: 3px
+        font-family: 'Roboto', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        color: #8EA4B5
+    .jobs-form__photo
+      width: 100%
+      position: relative
+      margin: 15px 0
+      label
+        font-family: 'Roboto', sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 11px
+        text-transform: uppercase
+        color: #475364
+      span
+        font-family: 'Roboto', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 10px
+        color: #8EA4B5
+      input
+        opacity: 0
+        visibility: hidden
+        position: absolute
+      .jobs-form__file-wrapper
+        width: 600px
+        height: 36px
+        background: #F4F9FB
+        border: 1px solid #DCE5EA
+        box-sizing: border-box
+        border-radius: 3px
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-pack: justify
+        -ms-flex-pack: justify
+        justify-content: space-between
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        -ms-flex-wrap: wrap
+        flex-wrap: wrap
+        .jobs-form__file-button
+          font-family: 'Roboto', sans-serif
+          font-style: normal
+          font-weight: bold
+          font-size: 10px
+          text-transform: uppercase
+          width: 104px
+          height: 26px
+          background: #386BF2;
+          color: #fff
+          display: flex
+          align-items: center
+          justify-content: center
+          margin-left: 5px
+          border-radius: 3px 
+          cursor: pointer
+        .jobs-form__file-fake
+          font-family: 'Roboto', sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 12px
+          line-height: 12px
+          color: #8EA4B5
+          height: 36px
+          width: calc(100% - 130px)
+          display: flex
+          align-items: center
+          padding: 0 0px
+          border-radius: 3px
+          border-right: none
+    .jobs-form__telephone
+      label
+        font-family: 'Roboto', sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 11px
+        text-transform: uppercase
+        color: #475364
+      input
+        width: 600px
+        height: 36px
+        background: #F4F9FB
+        border: 1px solid #DCE5EA
+        box-sizing: border-box
+        border-radius: 3px
+        font-family: 'Roboto', sans-serif;
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        color: #8EA4B5
+      a
+        font-family: 'Roboto', sans-serif
+        text-decoration: none
+        font-style: normal
+        font-weight: normal
+        font-size: 10px
+        line-height: 14px
+        color: #8EA4B5
+        transition: 0.4s
+        &:hover
+          border-bottom: dashed
+    .jobs-form__email
+      label
+        font-family: 'Roboto', sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 11px
+        text-transform: uppercase
+        color: #475364
+      input
+        width: 600px
+        height: 36px
+        background: #F4F9FB
+        border: 1px solid #DCE5EA
+        box-sizing: border-box
+        border-radius: 3px
+        font-family: 'Roboto', sans-serif;
+        font-style: normal
+        font-weight: normal
+        font-size: 12px
+        color: #8EA4B5
+      a
+        font-family: 'Roboto', sans-serif
+        text-decoration: none
+        font-style: normal
+        font-weight: normal
+        font-size: 10px
+        line-height: 14px
+        color: #8EA4B5
+        transition: 0.4s
+        &:hover
+          border-bottom: dashed
+    .jobs-form__summary
+      label
+        font-family: 'Roboto', sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 11px
+        text-transform: uppercase
+        color: #475364
+      span
+        font-family: 'Roboto', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 10px
+        color: #8EA4B5
+      input
+        opacity: 0
+        visibility: hidden
+        position: absolute
+      .jobs-summary__file-wrapper
+        width: 600px
+        height: 36px
+        background: #F4F9FB
+        border: 1px solid #DCE5EA
+        box-sizing: border-box
+        border-radius: 3px
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-pack: justify
+        -ms-flex-pack: justify
+        justify-content: space-between
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        -ms-flex-wrap: wrap
+        flex-wrap: wrap
+        .jobs-summary__file-button
+          font-family: 'Roboto', sans-serif
+          font-style: normal
+          font-weight: bold
+          font-size: 10px
+          text-transform: uppercase
+          width: 104px
+          height: 26px
+          background: #386BF2;
+          color: #fff
+          display: flex
+          align-items: center
+          justify-content: center
+          margin-left: 5px
+          border-radius: 3px 
+          cursor: pointer
+        .jobs-summary__file-fake
+          font-family: 'Roboto', sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 12px
+          line-height: 12px
+          color: #8EA4B5
+          height: 36px
+          width: calc(100% - 130px)
+          display: flex
+          align-items: center
+          padding: 0 0px
+          border-radius: 3px
+          border-right: none
+    .jobs-form__results
+      label
+        font-family: 'Roboto', sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 11px
+        text-transform: uppercase
+        color: #475364
+      span
+        font-family: 'Roboto', sans-serif
+        font-style: normal
+        font-weight: normal
+        font-size: 10px
+        color: #8EA4B5
+      input
+        opacity: 0
+        visibility: hidden
+        position: absolute
+      .jobs-results__file-wrapper
+        width: 600px
+        height: 36px
+        background: #F4F9FB
+        border: 1px solid #DCE5EA
+        box-sizing: border-box
+        border-radius: 3px
+        display: -webkit-box
+        display: -ms-flexbox
+        display: flex
+        -webkit-box-pack: justify
+        -ms-flex-pack: justify
+        justify-content: space-between
+        -webkit-box-align: center
+        -ms-flex-align: center
+        align-items: center
+        -ms-flex-wrap: wrap
+        flex-wrap: wrap
+        .jobs-results__file-button
+          font-family: 'Roboto', sans-serif
+          font-style: normal
+          font-weight: bold
+          font-size: 10px
+          text-transform: uppercase
+          width: 104px
+          height: 26px
+          background: #386BF2;
+          color: #fff
+          display: flex
+          align-items: center
+          justify-content: center
+          margin-left: 5px
+          border-radius: 3px 
+          cursor: pointer
+        .jobs-results__file-fake
+          font-family: 'Roboto', sans-serif
+          font-style: normal
+          font-weight: normal
+          font-size: 12px
+          line-height: 12px
+          color: #8EA4B5
+          height: 36px
+          width: calc(100% - 130px)
+          display: flex
+          align-items: center
+          padding: 0 0px
+          border-radius: 3px
+          border-right: none
+    .jobs-form__assessment
+      width: 100%
+      display: flex
+      justify-content: space-around
+      p
+        font-family: 'Roboto', sans-serif
+        font-style: normal
+        margin: 0
+        font-weight: bold
+        font-size: 11px
+        text-transform: uppercase
+        color: #475364
+      .rating-one
+        overflow: hidden 
+        width: 100px 
+        margin: 0 auto 
+        &:not(:checked) 
+          & > .input__one 
+            display: none 
+          & > .label__one 
+            float: right 
+            width: 20px 
+            padding: 0 
+            cursor: pointer 
+            font-size: 26px 
+            line-height: 50px 
+            color: lightgrey 
+            text-shadow: 1px 1px #bbb 
+            &:before 
+              content: '★' 
+        & > .input__one  
+          &:checked 
+            & ~ .label__one 
+              color: gold 
+              text-shadow: 1px 1px #c60 
+      .rating-one:not(:checked) > .label__one:hover,
+      .rating-one:not(:checked) > .label__one:hover ~ .label__one 
+        color: gold 
+      .rating-one > .input__one:checked + .label__one:hover,
+      .rating-one > .input__one:checked + .label__one:hover ~ .label__one,
+      .rating-one > .input__one:checked ~ .label__one:hover,
+      .rating-one > .input__one:checked ~ .label__one:hover ~ .label__one,
+      .rating-one > .label__one:hover ~ .input__one:checked ~ .label__one 
+        color: gold 
+        text-shadow: 1px 1px goldenrod 
+      .rating-one
+        & > .label__one 
+          &:active 
+            position: relative 
+      .rating-two
+        overflow: hidden 
+        width: 100px 
+        margin: 0 auto 
+        &:not(:checked) 
+          & > .input__two 
+            display: none 
+          & > .label__two  
+            float: right 
+            width: 20px 
+            padding: 0 
+            cursor: pointer 
+            font-size: 26px 
+            line-height: 50px 
+            color: lightgrey 
+            text-shadow: 1px 1px #bbb 
+            &:before 
+              content: '★' 
+        & > .input__two 
+          &:checked 
+            & ~ .label__two   
+              color: gold 
+              text-shadow: 1px 1px #c60 
+      .rating-two:not(:checked) > .label__two:hover,
+      .rating-two:not(:checked) > .label__two:hover ~ .label__two 
+        color: gold 
+      .rating-two > .input__two:checked + .label__two:hover,
+      .rating-two > .input__two:checked + .label__two:hover ~ .label__two,
+      .rating-two > .input__two:checked ~ .label__two:hover,
+      .rating-two > .input__two:checked ~ .label__two:hover ~ .label__two,
+      .rating-two > .input__two:hover ~ .input__two:checked ~ .label__two 
+        color: gold 
+        text-shadow: 1px 1px goldenrod 
+      .rating-two
+        & > .label__two 
+          &:active 
+            position: relative 
+      .rating-fri
+        overflow: hidden 
+        width: 100px 
+        margin: 0 auto 
+        &:not(:checked) 
+          & > .input__fri
+            display: none 
+          & > .label__fri  
+            float: right 
+            width: 20px 
+            padding: 0 
+            cursor: pointer 
+            font-size: 26px 
+            line-height: 50px 
+            color: lightgrey 
+            text-shadow: 1px 1px #bbb 
+            &:before 
+              content: '★' 
+        & > .input__fri
+          &:checked 
+            & ~ .label__fri    
+              color: gold 
+              text-shadow: 1px 1px #c60 
+      .rating-fri:not(:checked) > .label__fri:hover,
+      .rating-fri:not(:checked) > .label__fri:hover ~ .label__fri 
+        color: gold 
+      .rating-fri > .input__fri:checked + .label__fri:hover,
+      .rating-fri > .input__fri:checked + .label__fri:hover ~ .label__fri,
+      .rating-fri > .input__fri:checked ~ .label__fri:hover,
+      .rating-fri > .input__fri:checked ~ .label__fri:hover ~ .label__fri,
+      .rating-fri > .input__fri:hover ~ .input__fri:checked ~ .label__fri 
+        color: gold 
+        text-shadow: 1px 1px goldenrod 
+      .rating-fri
+        & > .label__fri 
+          &:active 
+            position: relative 
+    .jobs-form__button
+      margin-top: 50px
+      width: 100%
+      display: flex
+      flex-direction: row
+      justify-content: space-around
+      align-items: center
+      .form-button__one
+        width: 295px
+        height: 36px
+        background: #FFFFFF
+        border: 1px solid #D4E2E7
+        box-sizing: border-box
+        border-radius: 3px
+        font-family: 'Roboto', sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 11px
+        text-transform: uppercase
+        color: #475364
+        transition: 0.4s
+        &:hover
+          color: #FFFFFF
+          background: #386BF2
+      .form-button__two
+        width: 295px
+        height: 36px
+        background: #386BF2
+        border-radius: 3px
+        font-family: 'Roboto', sans-serif
+        font-style: normal
+        font-weight: bold
+        font-size: 11px
+        text-transform: uppercase
+        color: #FFFFFF
+        transition: 0.4s
+        &:hover
+          color: #475364
+          background: #FFFFFF
+          border: 1px solid #D4E2E7
+.modal__save
+  display: none
+  justify-content: center
+  align-items: center
+  position: fixed
+  z-index: 1
+  left: 0
+  top: 0
+  width: 100%
+  height: 100%
+  overflow: auto
+  background-color: rgba(0, 0, 0, 0.8)
+  .save
+    width: 400px
+    background-color: #ffffff
+    padding: 30px
+    .save__off
+      font-size: 24px
+      width: 13px
+      height: 30px
+      cursor: pointer
+    .save__wrapper
+      padding: 20px
+      border: 5px solid #999999
+      border-radius: 10px
+      margin-bottom: 10px
+      .save__box
+        p
+          font-family: 'Roboto', sans-serif;
+          font-style: normal
+          font-weight: bold
+          font-size: 12px
+          line-height: 14px
+          margin-bottom: 0
+          color: #475364
+        span
+          font-family: 'Roboto', sans-serif;
+          font-style: normal
+          font-weight: normal
+          font-size: 10px
+          color: #8EA4B5
+          
+
+
+
+
