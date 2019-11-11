@@ -240,6 +240,10 @@
   cursor: pointer;
 }
 
+.main .box .candidates__add p {
+  margin-top: 1rem;
+}
+
 .main .box .candidates__tables {
   width: 1300px;
   background-color: #ffffff;
@@ -272,26 +276,35 @@
   padding-left: 86px;
 }
 
+.main .box .candidates__tables .candidates-tables__box {
+  border-bottom: 2px solid #f4f9fb;
+}
+
 .main .box .candidates__tables .candidates-tables__box .tables-box__one {
   padding-top: 11px;
   padding-left: 20px;
+  padding-bottom: 18px;
 }
 
 .main .box .candidates__tables .candidates-tables__box .tables-box__two {
   padding-top: 11px;
+  padding-bottom: 18px;
 }
 
 .main .box .candidates__tables .candidates-tables__box .tables-box__fri {
   padding-top: 11px;
+  padding-bottom: 18px;
 }
 
 .main .box .candidates__tables .candidates-tables__box .tables-box__four {
   padding-top: 11px;
   padding-left: 86px;
+  padding-bottom: 18px;
 }
 
 .main .box .candidates__tables .candidates-tables__box .tables-box__five {
   padding-top: 11px;
+  padding-bottom: 18px;
 }
 
 .main .box .candidates__tables .candidates-tables__body {
@@ -447,6 +460,13 @@
   font-size: 14px;
   text-transform: uppercase;
   color: #475364;
+}
+
+.jobs hr {
+  border: none;
+  color: red;
+  height: 2px;
+  background: #F4F9FB;
 }
 
 .jobs__form .jobs-form__title {
