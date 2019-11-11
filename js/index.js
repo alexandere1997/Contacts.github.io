@@ -107,35 +107,34 @@ let newPersons = () => {
     document.querySelector('.jobs-results__file-fake').innerText = "ФАЙЛ НЕ ВБРАН";
   });
 
-  let counter__img = 0;
   form__button__two.addEventListener("click", (e) => {
     if(exampleInputText.value == false) {
       e.preventDefault();
-      alert("введите даныыые в поля");
+      alert("Введите даные в поля");
     }
     else if(job.value == false){
       e.preventDefault();
-      alert("введите даныыые в поля");
+      alert("Введите даные в поля");
     }
     else if(field.value == false){
       e.preventDefault();
-      alert("введите даныыые в поля");
+      alert("Введите даные в поля");
     }
     else if(summary.value == false){
       e.preventDefault();
-      alert("введите даныыые в поля");
+      alert("Введите даные в поля");
     }
     else if(results.value == false){
       e.preventDefault();
-      alert("введите даныыые в поля");
+      alert("Введите даные в поля");
     }
     else if(exampleInputTel.value == false){
       e.preventDefault();
-      alert("введите даныыые в поля");
+      alert("Введите даные в поля");
     }
     else if(exampleInputEmail.value == false){
       e.preventDefault();
-      alert("введите даныыые в поля");
+      alert("Введите даные в поля");
     }
     else{
       e.preventDefault();
@@ -150,9 +149,9 @@ let newPersons = () => {
 
       let candidates__tables = document.querySelector(".candidates__tables");
       let newTabs = document.createElement("tr");
-      newTabs.classList.add(`data-index="${counter__img++}"`)
+      newTabs.classList.add(`candidates-tables__box`)
       newTabs.innerHTML = `
-      <td>
+      <td class="tables-box__one">
       <div class="candidates-tables__body">
           <div class="candidates-tables__img">
               <img src="img/${filename}" alt="">
@@ -163,7 +162,7 @@ let newPersons = () => {
             </div>
       </div>
     </td>
-    <td>
+    <td class="tables-box__two">
       <div class="candidates-tables__body">
           <div class="candidates-tables__images">
               <img src="img/phone.png" alt="">
@@ -174,7 +173,7 @@ let newPersons = () => {
             </div>
       </div>
       </td>
-    <td>
+    <td class="tables-box__fri">
       <div class="candidates-tables__body">
           <div class="candidates-tables__images">
               <img src="img/mail.png" alt="">
@@ -185,7 +184,7 @@ let newPersons = () => {
             </div>
       </div>
     </td>
-    <td>
+    <td class="tables-box__four">
       <div class="candidates-tables__body">
         <div class="candidates-tables__text">
         <div class="candidates-tables__rating">
@@ -199,11 +198,11 @@ let newPersons = () => {
       </div>
       </div>
     </td>
-    <td>
+    <td class="tables-box__five">
       <div class="candidates-tables__body">
           <div class="candidates-tables__imags">
             <a href="content/${fillsummary}" download><img src="img/resume.png" alt=""></a>
-            <a href="${fillresults}" download><img src="img/archive.png" alt=""></a>
+            <a href="content/${fillresults}" download><img src="img/archive.png" alt=""></a>
             <a href="" class="candidates-tables__imags_add"><img src="img/favorites.png" alt=""></a>
             </div>
       </div>
@@ -232,6 +231,12 @@ let newPersons = () => {
   });
 }
 newPersons();
+
+let counter = () => {
+  let seekers__counter__element = document.querySelector(".seekers__counter-element");
+  seekers__counter__element.textContent++
+}
+counter();
 
 let seekers__btn_one = document.querySelector(".seekers__btn_one");
 let modal__save = document.querySelector(".modal__save");
